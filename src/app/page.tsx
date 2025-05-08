@@ -1,7 +1,9 @@
 "use client";
 import UserListItem from "./component/userListItem";
-import { useFetchUsersQuery } from "./store";
+import { useAddUserMutation, useFetchUsersQuery } from "./store";
 import { Skeleton } from "@mui/material";
+import Button from "@mui/material/Button";
+import CircularProgress from "@mui/material/CircularProgress";
 
 interface User {
   id: number;
@@ -10,6 +12,11 @@ interface User {
 }
 export default function Home() {
   const { data, isError, isFetching } = useFetchUsersQuery({});
+  const [addUser, results] = useAddUserMutation();
+
+  const handleAddUser = () => {
+    addUser();
+  }; // Kullanıcı ekleme işlemini burada gerçekleştirin
   let content;
   if (isFetching) {
     content = (
@@ -23,5 +30,19 @@ export default function Home() {
     });
   }
 
-  return <div>{content}</div>;
+  return (
+    <div>
+      <div className="topArrangement">
+        <h1 style={{ fontSize: "20px" }}>Kişiler</h1>
+        <Button variant="outlined" onClick={handleAddUser}>
+          {results.isLoading ? (
+            <CircularProgress size={24} />
+          ) : (
+            <span>Kişi Ekle+ </span>
+          )}
+        </Button>
+      </div>
+      {content}
+    </div>
+  );
 }
