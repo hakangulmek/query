@@ -4,3 +4,8 @@
   align-items: center;
   margin: 20px;
 }
+.panelTop {
+  background-color: lightcyan;
+  border-radius: 20px;
+  margin: 10px 20px;
+}
