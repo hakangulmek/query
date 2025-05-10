@@ -1,20 +1,97 @@
 {
   "users": [
     {
-      "id": "ce28",
-      "name": "Hattie Macejkovic"
+      "id": "9491",
+      "name": "Cindy Bernier"
     },
     {
-      "id": "7481",
-      "name": "Beverly Gislason"
+      "id": "2184",
+      "name": "Sonia Ebert"
+    }
+  ],
+  "albums": [
+    {
+      "id": "1",
+      "title": "The Dark Side of the Moon",
+      "userId": null,
+      "releaseYear": 1973,
+      "genre": "Progressive Rock"
     },
     {
-      "id": "1999",
-      "name": "Douglas Pacocha III"
+      "id": "2",
+      "title": "Back in Black",
+      "userId": null,
+      "releaseYear": 1980,
+      "genre": "Hard Rock"
     },
     {
-      "id": "79f3",
-      "name": "Alex Bradtke"
+      "id": "3",
+      "title": "Thriller",
+      "userId": null,
+      "releaseYear": 1982,
+      "genre": "Pop"
+    },
+    {
+      "id": "8ef4",
+      "userId": null,
+      "title": "Oriental Concrete Chips"
+    },
+    {
+      "id": "dafd",
+      "userId": null,
+      "title": "Intelligent Plastic Ball"
+    },
+    {
+      "id": "29d8",
+      "userId": null,
+      "title": "Rustic Granite Bacon"
+    },
+    {
+      "id": "cc78",
+      "userId": null,
+      "title": "Handmade Metal Hat"
+    },
+    {
+      "id": "e184",
+      "userId": "9491",
+      "title": "Licensed Metal Bacon",
+      "releaseYear": 2024,
+      "genre": "Tex-Mex"
+    },
+    {
+      "id": "88c5",
+      "userId": "9491",
+      "title": "Ergonomic Bronze Bike",
+      "releaseYear": 2024,
+      "genre": "French Pop"
+    },
+    {
+      "id": "258a",
+      "userId": "2184",
+      "title": "Rustic Marble Chips",
+      "releaseYear": 2024,
+      "genre": "Dixieland"
+    },
+    {
+      "id": "5b8f",
+      "userId": "2184",
+      "title": "Recycled Cotton Computer",
+      "releaseYear": 2024,
+      "genre": "Acid Rock"
+    },
+    {
+      "id": "108a",
+      "userId": "9491",
+      "title": "Elegant Wooden Pizza",
+      "releaseYear": 2025,
+      "genre": "Jackin House"
+    },
+    {
+      "id": "2f35",
+      "userId": "9491",
+      "title": "Oriental Rubber Computer",
+      "releaseYear": 2024,
+      "genre": "Zydeco"
     }
   ]
 }
