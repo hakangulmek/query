@@ -52,20 +52,6 @@
       "title": "Handmade Metal Hat"
     },
     {
-      "id": "e184",
-      "userId": "9491",
-      "title": "Licensed Metal Bacon",
-      "releaseYear": 2024,
-      "genre": "Tex-Mex"
-    },
-    {
-      "id": "88c5",
-      "userId": "9491",
-      "title": "Ergonomic Bronze Bike",
-      "releaseYear": 2024,
-      "genre": "French Pop"
-    },
-    {
       "id": "258a",
       "userId": "2184",
       "title": "Rustic Marble Chips",
@@ -80,18 +66,11 @@
       "genre": "Acid Rock"
     },
     {
-      "id": "108a",
+      "id": "c2a8",
       "userId": "9491",
-      "title": "Elegant Wooden Pizza",
-      "releaseYear": 2025,
-      "genre": "Jackin House"
-    },
-    {
-      "id": "2f35",
-      "userId": "9491",
-      "title": "Oriental Rubber Computer",
+      "title": "Recycled Wooden Computer",
       "releaseYear": 2024,
-      "genre": "Zydeco"
+      "genre": "Groove"
     }
   ]
 }

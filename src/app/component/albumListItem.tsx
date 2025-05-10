@@ -1,23 +1,36 @@
-import React from "react";
-import { Card, CardContent, Typography, IconButton, Box } from "@mui/material";
+import React, { useState } from "react";
+import {
+  Card,
+  CardContent,
+  Typography,
+  Box,
+  IconButton,
+  Collapse,
+} from "@mui/material";
 import { FaMusic } from "react-icons/fa6";
 import { MdDeleteForever } from "react-icons/md";
-import { useRemoveAlbumMutation } from "../store"; // API bağlantınızın konumuna göre ayarlayın
+import { GoChevronLeft, GoChevronRight } from "react-icons/go";
+import { useRemoveAlbumMutation } from "../store"; // API bağlantısı
+import Fotolist from "./fotoList"; // Fotoğrafları listeleme bileşeni
 
-function AlbumListItem({
-  album,
-}: {
-  album: {
-    id: number | string;
-    title: string;
-    releaseYear: number;
-    genre: string;
-  };
-}) {
+interface Album {
+  id: string;
+  title: string;
+  releaseYear: number;
+  genre: string;
+}
+
+function AlbumListItem({ album }: { album: Album }) {
   const [removeAlbum, results] = useRemoveAlbumMutation();
+  const [expanded, setExpanded] = useState(false);
 
-  const handleDelete = () => {
+  const handleDelete = (e: React.MouseEvent) => {
+    e.stopPropagation(); // Tıklamanın üst elemanlara yayılmasını engelliyoruz
     removeAlbum(album);
+  };
+
+  const toggleExpand = () => {
+    setExpanded(!expanded);
   };
 
   return (
@@ -33,7 +46,14 @@ function AlbumListItem({
         },
       }}
     >
-      <CardContent sx={{ padding: "16px !important" }}>
+      <CardContent
+        sx={{
+          padding: "16px !important",
+          cursor: "pointer",
+          "&:last-child": { paddingBottom: "16px" },
+        }}
+        onClick={toggleExpand}
+      >
         <Box
           sx={{
             display: "flex",
@@ -42,17 +62,20 @@ function AlbumListItem({
           }}
         >
           <Box sx={{ display: "flex", alignItems: "center", flex: 1 }}>
-            <FaMusic
-              size={40}
-              style={{
+            <Box
+              sx={{
                 color: "#1976d2",
-                marginRight: "8px",
-                fontSize: "28px",
+                mr: 1.5,
                 backgroundColor: "rgba(25, 118, 210, 0.1)",
                 padding: "8px",
                 borderRadius: "50%",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
               }}
-            />
+            >
+              <FaMusic size={24} />
+            </Box>
 
             <Box>
               <Typography
@@ -98,21 +121,42 @@ function AlbumListItem({
             </Box>
           </Box>
 
-          <IconButton
-            size="small"
-            onClick={handleDelete}
-            disabled={results.isLoading}
-            sx={{
-              color: "error.main",
-              "&:hover": {
-                backgroundColor: "rgba(211, 47, 47, 0.1)",
-              },
-            }}
-          >
-            <MdDeleteForever size={24} />
-          </IconButton>
+          {/* Sağ taraftaki butonlar bölümü */}
+          <Box sx={{ display: "flex", alignItems: "center" }}>
+            {/* Silme butonu */}
+            <IconButton
+              size="small"
+              onClick={handleDelete}
+              disabled={results.isLoading}
+              sx={{
+                color: "error.main",
+                "&:hover": {
+                  backgroundColor: "rgba(211, 47, 47, 0.1)",
+                },
+                mr: 1, // Sağa margin ekleyerek ikonlar arasında boşluk oluşturuyoruz
+              }}
+            >
+              <MdDeleteForever size={22} />
+            </IconButton>
+
+            {/* Açma/Kapama butonu */}
+            <IconButton
+              onClick={(e) => {
+                e.stopPropagation();
+                toggleExpand();
+              }}
+              size="small"
+            >
+              {expanded ? <GoChevronLeft /> : <GoChevronRight />}
+            </IconButton>
+          </Box>
         </Box>
       </CardContent>
+      <Collapse in={expanded} timeout="auto" unmountOnExit>
+        <CardContent>
+          <Fotolist album={album} />
+        </CardContent>
+      </Collapse>
     </Card>
   );
 }

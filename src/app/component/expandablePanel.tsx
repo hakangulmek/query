@@ -14,6 +14,7 @@ function ExpandablePanel({
   const handleOpenClick = () => {
     setIsOpen((prev) => !prev);
   };
+
   return (
     <div className="panelTop">
       <div className="topArrangement">
