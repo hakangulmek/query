@@ -7,6 +7,10 @@
     {
       "id": "2184",
       "name": "Sonia Ebert"
+    },
+    {
+      "id": "a4cb",
+      "name": "Grady Swift-Luettgen"
     }
   ],
   "albums": [
@@ -52,13 +56,6 @@
       "title": "Handmade Metal Hat"
     },
     {
-      "id": "258a",
-      "userId": "2184",
-      "title": "Rustic Marble Chips",
-      "releaseYear": 2024,
-      "genre": "Dixieland"
-    },
-    {
       "id": "5b8f",
       "userId": "2184",
       "title": "Recycled Cotton Computer",
@@ -71,6 +68,42 @@
       "title": "Recycled Wooden Computer",
       "releaseYear": 2024,
       "genre": "Groove"
+    },
+    {
+      "id": "fc3d",
+      "userId": "9491",
+      "title": "Bespoke Rubber Hat",
+      "releaseYear": 2024,
+      "genre": "CCM"
+    }
+  ],
+  "fotos": [
+    {
+      "id": "bff4",
+      "albumId": null,
+      "url": "https://picsum.photos/seed/WHycJLf7e/1362/1114"
+    },
+    {
+      "id": "abd7",
+      "albumId": null,
+      "url": "https://loremflickr.com/1298/847?lock=8031302524972060"
+    },
+    {
+      "id": "1c0a",
+      "albumId": "5b8f",
+      "url": "https://loremflickr.com/3402/891?lock=852544416490411"
+    },
+    {
+      "id": "d106",
+      "albumId": "c2a8",
+      "url": "https://picsum.photos/seed/p7txIX/1095/1561"
+    },
+    {
+      "id": "7829",
+      "albumId": "5b8f",
+      "url": "https://picsum.photos/seed/vYmtUvSVnm/2231/115",
+      "releaseYear": 2024,
+      "genre": "Bounce"
     }
   ]
 }
