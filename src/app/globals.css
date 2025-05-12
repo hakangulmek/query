@@ -9,3 +9,10 @@
   border-radius: 20px;
   margin: 10px 20px;
 }
+.fotoDiv {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}

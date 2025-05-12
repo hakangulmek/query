@@ -56,25 +56,11 @@
       "title": "Handmade Metal Hat"
     },
     {
-      "id": "5b8f",
+      "id": "c2b3",
       "userId": "2184",
-      "title": "Recycled Cotton Computer",
+      "title": "Handmade Aluminum Car",
       "releaseYear": 2024,
-      "genre": "Acid Rock"
-    },
-    {
-      "id": "c2a8",
-      "userId": "9491",
-      "title": "Recycled Wooden Computer",
-      "releaseYear": 2024,
-      "genre": "Groove"
-    },
-    {
-      "id": "fc3d",
-      "userId": "9491",
-      "title": "Bespoke Rubber Hat",
-      "releaseYear": 2024,
-      "genre": "CCM"
+      "genre": "Kayokyoku"
     }
   ],
   "fotos": [
@@ -90,20 +76,62 @@
     },
     {
       "id": "1c0a",
-      "albumId": "5b8f",
+      "albumId": null,
       "url": "https://loremflickr.com/3402/891?lock=852544416490411"
     },
     {
       "id": "d106",
-      "albumId": "c2a8",
+      "albumId": null,
       "url": "https://picsum.photos/seed/p7txIX/1095/1561"
     },
     {
       "id": "7829",
-      "albumId": "5b8f",
+      "albumId": null,
       "url": "https://picsum.photos/seed/vYmtUvSVnm/2231/115",
       "releaseYear": 2024,
       "genre": "Bounce"
+    },
+    {
+      "id": "51b0",
+      "albumId": null,
+      "url": "https://picsum.photos/seed/7srUpBf28i/1596/1653",
+      "releaseYear": 2025,
+      "genre": "Acid Jazz"
+    },
+    {
+      "id": "45c7",
+      "albumId": null,
+      "url": "https://picsum.photos/seed/vhScLWHAj/1998/2963",
+      "releaseYear": 2025,
+      "genre": "Drill"
+    },
+    {
+      "id": "dcc7",
+      "albumId": null,
+      "url": "https://picsum.photos/seed/HIsslwPbte/1370/2446",
+      "releaseYear": 2024,
+      "genre": "Punk"
+    },
+    {
+      "id": "f9d6",
+      "albumId": "c2b3",
+      "url": "https://picsum.photos/seed/sbWotCn/3949/3472",
+      "releaseYear": 2025,
+      "genre": "Chicago Blues"
+    },
+    {
+      "id": "9486",
+      "albumId": "c2b3",
+      "url": "https://loremflickr.com/3484/3565?lock=1374659244894516",
+      "releaseYear": 2024,
+      "genre": "Electronic"
+    },
+    {
+      "id": "0511",
+      "albumId": "c2b3",
+      "url": "https://picsum.photos/seed/zmFGDAI2W/638/2737",
+      "releaseYear": 2024,
+      "genre": "Tango"
     }
   ]
 }

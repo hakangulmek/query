@@ -89,7 +89,7 @@ function FotoList({
             <CircularProgress size={20} /> Güncelleniyor...
           </div>
         ) : null}
-        {content}
+        <div className="fotoDiv">{content}</div>
       </div>
     </>
   );
